@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "shadcn": {
+      "command": "npx",
+      "args": [
+        "shadcn@latest",
+        "mcp"
+      ]
+    },
+    "figma": {
+      "type": "http",
+      "url": "https://mcp.figma.com/mcp"
+    },
+    "treit-design-system": {
+      "type": "http",
+      "url": "https://mcp.treit.com.br"
+    },
+    "treit-design-system-local": {
+      "command": "npm",
+      "args": ["run", "mcp:dev"],
+      "cwd": "."
+    }
+  }
+}

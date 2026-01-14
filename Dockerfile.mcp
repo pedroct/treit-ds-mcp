@@ -1,0 +1,22 @@
+# syntax=docker/dockerfile:1
+
+FROM node:20-alpine AS deps
+WORKDIR /app
+COPY mcp/package.json mcp/package-lock.json ./mcp/
+RUN cd mcp && npm ci
+
+FROM node:20-alpine AS builder
+WORKDIR /app
+COPY --from=deps /app/mcp/node_modules ./mcp/node_modules
+COPY mcp ./mcp
+RUN cd mcp && npm run build
+
+FROM node:20-alpine AS runner
+WORKDIR /app
+ENV NODE_ENV=production
+ENV MCP_HTTP_PORT=8787
+COPY --from=builder /app/mcp/package.json /app/mcp/package-lock.json ./mcp/
+COPY --from=builder /app/mcp/dist ./mcp/dist
+COPY --from=builder /app/mcp/node_modules ./mcp/node_modules
+EXPOSE 8787
+CMD ["node", "./mcp/dist/index.js"]

@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* === BASE === */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+
+    /* === CARD === */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+
+    /* === POPOVER / DROPDOWN / TOOLTIP === */
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    /* === PRIMARY (Orange - PANTONE ORANGE 021 C) === */
+    --primary: 14 99% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    /* === SECONDARY (Light Blue - PANTONE 319 C) === */
+    --secondary: 188 94% 57%;
+    --secondary-foreground: 0 0% 0%;
+
+    /* === MUTED === */
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 45%;
+
+    /* === ACCENT (Dark Blue - PANTONE 2935 C) === */
+    --accent: 214 100% 41%;
+    --accent-foreground: 0 0% 100%;
+
+    /* === DESTRUCTIVE === */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* === BORDERS & INPUTS === */
+    --border: 0 0% 89%;
+    --input: 0 0% 89%;
+    --ring: 14 99% 50%;
+
+    /* === BORDER RADIUS === */
+    --radius: 0.5rem;
+
+    /* === CHART COLORS === */
+    --chart-1: 14 99% 50%;
+    --chart-2: 188 94% 57%;
+    --chart-3: 214 100% 41%;
+    --chart-4: 0 0% 60%;
+    --chart-5: 0 0% 40%;
+
+    /* === SIDEBAR === */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 5%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 14 99% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 188 94% 57%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 214 100% 41%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 14 99% 50%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: Montserrat, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
