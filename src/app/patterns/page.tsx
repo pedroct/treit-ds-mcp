@@ -19,7 +19,7 @@ export default function PatternsPage() {
                   Use containers para centralizar e limitar a largura do conteúdo
                 </p>
                 <div className="bg-muted rounded p-4">
-                  <code className="text-sm">className="container mx-auto px-4"</code>
+                  <code className="text-sm">className=&quot;container mx-auto px-4&quot;</code>
                 </div>
               </div>
 
@@ -30,7 +30,7 @@ export default function PatternsPage() {
                 </p>
                 <div className="bg-muted rounded p-4 mb-4">
                   <code className="text-sm">
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                    className=&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4&quot;
                   </code>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -47,7 +47,7 @@ export default function PatternsPage() {
                 </p>
                 <div className="bg-muted rounded p-4 mb-4">
                   <code className="text-sm">
-                    className="flex items-center justify-between gap-4"
+                    className=&quot;flex items-center justify-between gap-4&quot;
                   </code>
                 </div>
                 <div className="flex items-center justify-between gap-4 p-4 bg-primary/10 rounded">

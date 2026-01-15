@@ -66,7 +66,7 @@ export default function SpacingPage() {
                   </div>
                 </div>
                 <code className="text-xs text-muted-foreground mt-2 block">
-                  className="p-4"
+                  className=&quot;p-4&quot;
                 </code>
               </div>
 
@@ -83,7 +83,7 @@ export default function SpacingPage() {
                   </div>
                 </div>
                 <code className="text-xs text-muted-foreground mt-2 block">
-                  className="mb-4"
+                  className=&quot;mb-4&quot;
                 </code>
               </div>
 
@@ -105,7 +105,7 @@ export default function SpacingPage() {
                   </div>
                 </div>
                 <code className="text-xs text-muted-foreground mt-2 block">
-                  className="flex gap-4"
+                  className=&quot;flex gap-4&quot;
                 </code>
               </div>
             </div>

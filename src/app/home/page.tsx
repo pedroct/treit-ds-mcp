@@ -56,7 +56,7 @@ export default function HomePage() {
             <div>
               <h1 className="text-3xl font-bold">Welcome back, John!</h1>
               <p className="text-muted-foreground">
-                Here's what's happening with your projects today.
+                Here&apos;s what&apos;s happening with your projects today.
               </p>
             </div>
           </div>
