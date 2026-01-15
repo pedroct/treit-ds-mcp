@@ -106,6 +106,7 @@ O projeto inclui integração com:
 Configuração em `.mcp.json`
 
 Guia de configuração do MCP na IDE: `MCP_IDE_SETUP.md`
+Guia de configuração do deployment (GitHub Actions): `DEPLOYMENT_GITHUB_ACTIONS.md`
 
 ## 🚀 Deploy & Domínios
 
