@@ -7,6 +7,7 @@ import {
   ReadResourceRequestSchema,
 } from "@modelcontextprotocol/sdk/types.js";
 import http from "node:http";
+import type { IncomingMessage, ServerResponse } from "node:http";
 import { URL } from "node:url";
 import { findRepoRoot } from "./utils/fs.js";
 import { buildComponentsIndex, getComponentByName } from "./providers/componentsProvider.js";
@@ -99,14 +100,14 @@ async function main() {
       if (typeof args.name !== "string" || (args.category !== "ui" && args.category !== "layout")) {
         throw new Error("Invalid input for tool.scaffoldComponent.");
       }
-      return scaffoldComponent(args as Parameters<typeof scaffoldComponent>[0]);
+      return scaffoldComponent(args as unknown as Parameters<typeof scaffoldComponent>[0]);
     }
 
     if (toolName === "tool.validateUsage") {
       if (typeof args.code !== "string") {
         throw new Error("Invalid input for tool.validateUsage.");
       }
-      return validateUsage(args as Parameters<typeof validateUsage>[0]);
+      return validateUsage(args as unknown as Parameters<typeof validateUsage>[0]);
     }
 
     throw new Error(`Unknown tool: ${toolName}`);
@@ -190,7 +191,7 @@ async function main() {
 
   const httpPort = Number(process.env.MCP_HTTP_PORT ?? "");
   if (!Number.isNaN(httpPort) && httpPort > 0) {
-    const httpServer = http.createServer(async (req, res) => {
+    const httpServer = http.createServer(async (req: IncomingMessage, res: ServerResponse) => {
       const url = new URL(req.url ?? "/", `http://${req.headers.host ?? "localhost"}`);
 
       if (req.method === "GET" && url.pathname === "/health") {
@@ -225,7 +226,7 @@ async function main() {
 
       if (req.method === "POST" && url.pathname === "/tool") {
         const chunks: Buffer[] = [];
-        req.on("data", (chunk) => chunks.push(Buffer.from(chunk)));
+        req.on("data", (chunk: Buffer) => chunks.push(Buffer.from(chunk)));
         req.on("end", () => {
           try {
             const body = JSON.parse(Buffer.concat(chunks).toString("utf8")) as {
