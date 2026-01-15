@@ -13,7 +13,7 @@ services:
       - "com.treit.service=ds-site"
       - "com.treit.domain=ds.treit.com.br"
     healthcheck:
-      test: ["CMD-SHELL", "wget -qO- http://localhost:3000/ > /dev/null"]
+      test: ["CMD-SHELL", "curl -f http://localhost:3000/ > /dev/null"]
       interval: 30s
       timeout: 5s
       retries: 3
@@ -31,7 +31,7 @@ services:
       - "com.treit.service=mcp"
       - "com.treit.domain=mcp.treit.com.br"
     healthcheck:
-      test: ["CMD-SHELL", "wget -qO- http://localhost:8787/health > /dev/null"]
+      test: ["CMD-SHELL", "curl -f http://localhost:8787/health > /dev/null"]
       interval: 30s
       timeout: 5s
       retries: 3
