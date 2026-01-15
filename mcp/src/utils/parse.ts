@@ -157,7 +157,7 @@ export function extractTailwindColorTokens(tailwindSource: string): TailwindColo
   const colors: Record<string, unknown> = {};
   const cssVars = new Set<string>();
 
-  const colorBlockMatch = tailwindSource.match(/colors:\s*{([\s\S]*?)\n\s*},\s*borderRadius/s);
+  const colorBlockMatch = tailwindSource.match(/colors:\s*{([\s\S]*?)\n\s*},\s*borderRadius/);
   if (colorBlockMatch?.[1]) {
     const colorBlock = colorBlockMatch[1];
     const simpleColorRegex = /([A-Za-z0-9_-]+):\s*'hsl\(var\(--([A-Za-z0-9_-]+)\)\)'/g;
