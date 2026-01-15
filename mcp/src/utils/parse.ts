@@ -43,11 +43,11 @@ export function extractExports(source: string): string[] {
 
   const exportListRegex = /export\s*{\s*([^}]+)\s*}/g;
   while ((match = exportListRegex.exec(source))) {
-    const names = match[1]
-      ?.split(",")
+    const names = (match[1] ?? "")
+      .split(",")
       .map((part) => part.trim().split(/\s+as\s+/i)[0])
-      .filter(Boolean);
-    names?.forEach((name) => exports.add(name));
+      .filter((name): name is string => Boolean(name));
+    names.forEach((name) => exports.add(name));
   }
 
   return Array.from(exports);
@@ -182,7 +182,7 @@ export function extractTailwindColorTokens(tailwindSource: string): TailwindColo
           cssVars.add(`--${entryMatch[2]}`);
         }
       }
-      if (Object.keys(entries).length > 0) {
+      if (colorName && Object.keys(entries).length > 0) {
         colors[colorName] = entries;
       }
     }
