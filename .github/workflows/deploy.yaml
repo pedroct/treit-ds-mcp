@@ -112,6 +112,9 @@ jobs:
               done
             ' || echo "⚠️  Timeout aguardando containers, continuando..."
 
+            echo "⏳ Aguardando 10s para os serviços iniciarem completamente..."
+            sleep 10
+
             echo "🔍 Verificando status dos containers..."
             docker compose ps
 

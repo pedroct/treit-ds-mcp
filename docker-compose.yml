@@ -11,6 +11,7 @@ services:
       - NODE_ENV=production
     networks:
       - treit-network
+      - api-aponta-network
     labels:
       - "com.treit.service=ds-site"
       - "com.treit.domain=ds.treit.com.br"
@@ -31,6 +32,7 @@ services:
       - MCP_HTTP_PORT=8787
     networks:
       - treit-network
+      - api-aponta-network
     labels:
       - "com.treit.service=mcp"
       - "com.treit.domain=mcp.treit.com.br"
@@ -43,3 +45,5 @@ services:
 networks:
   treit-network:
     driver: bridge
+  api-aponta-network:
+    external: true
