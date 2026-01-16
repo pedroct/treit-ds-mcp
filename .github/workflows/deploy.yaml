@@ -127,13 +127,19 @@ jobs:
             docker compose ps
 
             echo "🏥 Testando health checks internos..."
-            # Testa ds-site diretamente na porta exposta
-            curl -f http://localhost:3000/ > /dev/null && echo "✅ ds-site OK" || echo "⚠️  ds-site falhou"
-
-            # Testa MCP via container (porta não exposta no host)
+            # Testa MCP via container
             docker exec treit-design-system-mcp-1 curl -f http://localhost:8787/health > /dev/null && echo "✅ MCP OK" || echo "⚠️  MCP falhou"
 
-            # Verifica nginx-aponta (se estiver na mesma rede)
+            # Testa ds-site via container
+            docker exec treit-design-system-ds-site-1 curl -f http://localhost:3000/ > /dev/null && echo "✅ ds-site OK" || echo "⚠️  ds-site falhou"
+
+            echo "🔄 Reiniciando nginx-aponta para atualizar DNS dos containers..."
+            docker restart nginx-aponta
+
+            echo "⏳ Aguardando nginx reiniciar..."
+            sleep 5
+
+            # Verifica nginx após reiniciar
             docker exec nginx-aponta nginx -t && echo "✅ nginx config OK" || echo "⚠️  nginx config com problemas"
 
             echo "✅ Deploy interno concluído!"
