@@ -133,13 +133,13 @@ jobs:
             # Testa ds-site via container
             docker exec treit-design-system-ds-site-1 curl -f http://localhost:3000/ > /dev/null && echo "✅ ds-site OK" || echo "⚠️  ds-site falhou"
 
-            echo "🔄 Reiniciando nginx-aponta para atualizar DNS dos containers..."
-            docker restart nginx-aponta
+            echo "🔄 Recarregando configuração nginx-aponta para atualizar DNS..."
+            docker exec nginx-aponta nginx -s reload && echo "✅ nginx recarregado" || echo "⚠️  falha ao recarregar nginx"
 
-            echo "⏳ Aguardando nginx reiniciar..."
-            sleep 5
+            echo "⏳ Aguardando 3s para nginx processar reload..."
+            sleep 3
 
-            # Verifica nginx após reiniciar
+            # Verifica nginx após reload
             docker exec nginx-aponta nginx -t && echo "✅ nginx config OK" || echo "⚠️  nginx config com problemas"
 
             echo "✅ Deploy interno concluído!"
