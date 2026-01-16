@@ -46,4 +46,5 @@ networks:
   treit-network:
     driver: bridge
   api-aponta-network:
+    name: api-aponta-vps_aponta-network
     external: true

@@ -91,12 +91,13 @@ jobs:
             set -euxo pipefail
             cd $VPS_PATH
 
-            echo "🌐 Verificando rede api-aponta-network..."
-            if ! docker network inspect api-aponta-network >/dev/null 2>&1; then
-              echo "📡 Criando rede api-aponta-network..."
-              docker network create api-aponta-network
+            echo "🌐 Verificando rede api-aponta-vps_aponta-network..."
+            if ! docker network inspect api-aponta-vps_aponta-network >/dev/null 2>&1; then
+              echo "❌ Erro: Rede api-aponta-vps_aponta-network não existe!"
+              echo "   Esta rede deve ser criada pelo projeto api-aponta-vps"
+              exit 1
             else
-              echo "✅ Rede api-aponta-network já existe"
+              echo "✅ Rede api-aponta-vps_aponta-network encontrada"
             fi
 
             echo "🐳 Reconstruindo containers..."
