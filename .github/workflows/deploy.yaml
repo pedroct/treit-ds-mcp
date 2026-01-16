@@ -91,6 +91,14 @@ jobs:
             set -euxo pipefail
             cd $VPS_PATH
 
+            echo "🌐 Verificando rede api-aponta-network..."
+            if ! docker network inspect api-aponta-network >/dev/null 2>&1; then
+              echo "📡 Criando rede api-aponta-network..."
+              docker network create api-aponta-network
+            else
+              echo "✅ Rede api-aponta-network já existe"
+            fi
+
             echo "🐳 Reconstruindo containers..."
             docker compose down --remove-orphans || true
 

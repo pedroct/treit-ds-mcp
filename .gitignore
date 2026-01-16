@@ -9,8 +9,6 @@
 
 # testing
 /coverage
-**/coverage
-tmpclaude-*
 
 # next.js
 /.next/
