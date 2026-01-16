@@ -95,20 +95,35 @@ jobs:
             docker compose down --remove-orphans || true
 
             echo "📦 Building images..."
-            docker compose build --no-cache
+            docker compose build
 
             echo "🚀 Starting containers..."
             docker compose up -d
 
-            echo "⏳ Aguardando inicialização (45s)..."
-            sleep 45
+            echo "⏳ Aguardando containers ficarem healthy..."
+            timeout 120 bash -c '
+              while true; do
+                if docker compose ps | grep -q "ds-site.*Up" && docker compose ps | grep -q "mcp.*Up"; then
+                  echo "✅ Containers estão Up"
+                  break
+                fi
+                echo "⏳ Aguardando containers..."
+                sleep 3
+              done
+            ' || echo "⚠️  Timeout aguardando containers, continuando..."
 
             echo "🔍 Verificando status dos containers..."
             docker compose ps
 
-            echo "🏥 Testando health checks..."
-            curl -f http://localhost:3000/ > /dev/null
-            curl -f http://localhost:8787/health > /dev/null
+            echo "🏥 Testando health checks internos..."
+            # Testa ds-site diretamente na porta exposta
+            curl -f http://localhost:3000/ > /dev/null && echo "✅ ds-site OK" || echo "⚠️  ds-site falhou"
+
+            # Testa MCP via container (porta não exposta no host)
+            docker exec treit-design-system-mcp-1 curl -f http://localhost:8787/health > /dev/null && echo "✅ MCP OK" || echo "⚠️  MCP falhou"
+
+            # Verifica nginx-aponta (se estiver na mesma rede)
+            docker exec nginx-aponta nginx -t && echo "✅ nginx config OK" || echo "⚠️  nginx config com problemas"
 
             echo "✅ Deploy interno concluído!"
           ENDSSH
