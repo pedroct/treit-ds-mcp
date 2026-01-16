@@ -1,28 +1,6 @@
 version: "3.9"
 
 services:
-  nginx:
-    build:
-      context: ./nginx
-      dockerfile: Dockerfile
-    ports:
-      - "80:80"
-      - "443:443"
-    depends_on:
-      - ds-site
-      - mcp
-    networks:
-      - treit-network
-      - api-aponta-network
-    restart: unless-stopped
-    labels:
-      - "com.treit.service=nginx"
-    healthcheck:
-      test: ["CMD-SHELL", "curl -f http://localhost/nginx-health || exit 1"]
-      interval: 30s
-      timeout: 5s
-      retries: 3
-
   ds-site:
     build:
       context: .
@@ -65,5 +43,3 @@ services:
 networks:
   treit-network:
     driver: bridge
-  api-aponta-network:
-    external: true
