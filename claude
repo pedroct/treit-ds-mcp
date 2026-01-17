@@ -1,0 +1,95 @@
+# Project Rules and Guidelines
+
+> Auto-generated from .context/docs on 2026-01-16T13:14:54.366Z
+
+## README
+
+# Documentation Index
+
+Welcome to the repository knowledge base. Start with the project overview, then dive into specific guides as needed.
+
+## Core Guides
+- [Project Overview](./project-overview.md)
+- [Architecture Notes](./architecture.md)
+- [Development Workflow](./development-workflow.md)
+- [Testing Strategy](./testing-strategy.md)
+- [Glossary & Domain Concepts](./glossary.md)
+- [Data Flow & Integrations](./data-flow.md)
+- [Security & Compliance Notes](./security.md)
+- [Tooling & Productivity Guide](./tooling.md)
+
+## Repository Snapshot
+- `BRAND_COLORS_UPDATE.md/`
+- `certificados_cloudflare.txt/`
+- `components.json/`
+- `coverage/`
+- `DEPLOY_SSL_NGINX_SUCESSO.md/`
+- `DEPLOY_SSL_NGINX.md/`
+- `DEPLOY_SSL_VPS.md/`
+- `DEPLOYMENT_GITHUB_ACTIONS.md/`
+- `DESIGN_CONTEXT.md/`
+- `DESIGN_SYSTEM_SETUP.md/`
+- `design_system.code-workspace/`
+- `docker-compose.yml/`
+- `Dockerfile.ds-site/`
+- `Dockerfile.mcp/`
+- `mcp/`
+- `MCP_IDE_SETUP.md/`
+- `next-env.d.ts/`
+- `next.config.ts/`
+- `nginx/`
+- `nginx-http2-fix.md/`
+- `package-lock.json/`
+- `package.json/`
+- `postcss.config.mjs/`
+- `prompt/`
+- `public/`
+- `README.md/`
+- `src/` — TypeScript source files and CLI entrypoints.
+- `tailwind.config.ts/`
+- `tmpclaude-01bf-cwd/`
+- `tmpclaude-0c9c-cwd/`
+- `tmpclaude-0d7f-cwd/`
+- `tmpclaude-1120-cwd/`
+- `tmpclaude-133a-cwd/`
+- `tmpclaude-1aba-cwd/`
+- `tmpclaude-29dc-cwd/`
+- `tmpclaude-2e64-cwd/`
+- `tmpclaude-3ef3-cwd/`
+- `tmpclaude-4072-cwd/`
+- `tmpclaude-517f-cwd/`
+- `tmpclaude-5db7-cwd/`
+- `tmpclaude-673b-cwd/`
+- `tmpclaude-6a3b-cwd/`
+- `tmpclaude-6b96-cwd/`
+- `tmpclaude-6e11-cwd/`
+- `tmpclaude-7374-cwd/`
+- `tmpclaude-7aa7-cwd/`
+- `tmpclaude-8382-cwd/`
+- `tmpclaude-91e2-cwd/`
+- `tmpclaude-a458-cwd/`
+- `tmpclaude-c88e-cwd/`
+- `tmpclaude-db83-cwd/`
+- `tmpclaude-e469-cwd/`
+- `tmpclaude-e554-cwd/`
+- `tmpclaude-e600-cwd/`
+- `tmpclaude-e983-cwd/`
+- `tmpclaude-f32b-cwd/`
+- `tmpclaude-f929-cwd/`
+- `tsconfig.json/`
+- `tsconfig.tsbuildinfo/`
+- `TYPOGRAPHY_UPDATE.md/`
+- `vitest.config.ts/`
+
+## Document Map
+| Guide | File | Primary Inputs |
+| --- | --- | --- |
+| Project Overview | `project-overview.md` | Roadmap, README, stakeholder notes |
+| Architecture Notes | `architecture.md` | ADRs, service boundaries, dependency graphs |
+| Development Workflow | `development-workflow.md` | Branching rules, CI config, contributing guide |
+| Testing Strategy | `testing-strategy.md` | Test configs, CI gates, known flaky suites |
+| Glossary & Domain Concepts | `glossary.md` | Business terminology, user personas, domain rules |
+| Data Flow & Integrations | `data-flow.md` | System diagrams, integration specs, queue topics |
+| Security & Compliance Notes | `security.md` | Auth model, secrets management, compliance requirements |
+| Tooling & Productivity Guide | `tooling.md` | CLI scripts, IDE configs, automation workflows |
+

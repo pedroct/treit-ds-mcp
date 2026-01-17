@@ -1,0 +1,1256 @@
+{
+  "version": "1.0.0",
+  "generated": "2026-01-16T14:20:42.070Z",
+  "stack": {
+    "primaryLanguage": "typescript",
+    "languages": [
+      "javascript",
+      "typescript"
+    ],
+    "frameworks": [
+      "nextjs"
+    ],
+    "buildTools": [
+      "docker-compose"
+    ],
+    "testFrameworks": [
+      "vitest"
+    ],
+    "packageManager": "npm",
+    "isMonorepo": false,
+    "hasDocker": true,
+    "hasCI": true
+  },
+  "structure": {
+    "totalFiles": 4866,
+    "topDirectories": [
+      {
+        "name": "agents",
+        "fileCount": 1
+      },
+      {
+        "name": "AGENTS.md",
+        "fileCount": 1
+      },
+      {
+        "name": "BRAND_COLORS_UPDATE.md",
+        "fileCount": 1
+      },
+      {
+        "name": "certificados_cloudflare.txt",
+        "fileCount": 1
+      },
+      {
+        "name": "claude",
+        "fileCount": 1
+      },
+      {
+        "name": "components.json",
+        "fileCount": 1
+      },
+      {
+        "name": "coverage",
+        "fileCount": 14
+      },
+      {
+        "name": "cursor",
+        "fileCount": 1
+      },
+      {
+        "name": "DEPLOY_SSL_NGINX_SUCESSO.md",
+        "fileCount": 1
+      },
+      {
+        "name": "DEPLOY_SSL_NGINX.md",
+        "fileCount": 1
+      },
+      {
+        "name": "DEPLOY_SSL_VPS.md",
+        "fileCount": 1
+      },
+      {
+        "name": "DEPLOYMENT_GITHUB_ACTIONS.md",
+        "fileCount": 1
+      },
+      {
+        "name": "DESIGN_CONTEXT.md",
+        "fileCount": 1
+      },
+      {
+        "name": "DESIGN_SYSTEM_SETUP.md",
+        "fileCount": 1
+      },
+      {
+        "name": "design_system.code-workspace",
+        "fileCount": 1
+      },
+      {
+        "name": "docker-compose.yml",
+        "fileCount": 1
+      },
+      {
+        "name": "Dockerfile.ds-site",
+        "fileCount": 1
+      },
+      {
+        "name": "Dockerfile.mcp",
+        "fileCount": 1
+      },
+      {
+        "name": "mcp",
+        "fileCount": 4759
+      },
+      {
+        "name": "MCP_IDE_SETUP.md",
+        "fileCount": 1
+      },
+      {
+        "name": "next-env.d.ts",
+        "fileCount": 1
+      },
+      {
+        "name": "next.config.ts",
+        "fileCount": 1
+      },
+      {
+        "name": "nginx",
+        "fileCount": 6
+      },
+      {
+        "name": "nginx-http2-fix.md",
+        "fileCount": 1
+      },
+      {
+        "name": "package-lock.json",
+        "fileCount": 1
+      },
+      {
+        "name": "package.json",
+        "fileCount": 1
+      },
+      {
+        "name": "postcss.config.mjs",
+        "fileCount": 1
+      },
+      {
+        "name": "prompt",
+        "fileCount": 4
+      },
+      {
+        "name": "public",
+        "fileCount": 0
+      },
+      {
+        "name": "README.md",
+        "fileCount": 1
+      },
+      {
+        "name": "src",
+        "fileCount": 37
+      },
+      {
+        "name": "tailwind.config.ts",
+        "fileCount": 1
+      },
+      {
+        "name": "tmpclaude-0bb0-cwd",
+        "fileCount": 1
+      },
+      {
+        "name": "tmpclaude-0e43-cwd",
+        "fileCount": 1
+      },
+      {
+        "name": "tmpclaude-3778-cwd",
+        "fileCount": 1
+      },
+      {
+        "name": "tmpclaude-4773-cwd",
+        "fileCount": 1
+      },
+      {
+        "name": "tmpclaude-5756-cwd",
+        "fileCount": 1
+      },
+      {
+        "name": "tmpclaude-5e0a-cwd",
+        "fileCount": 1
+      },
+      {
+        "name": "tmpclaude-73cc-cwd",
+        "fileCount": 1
+      },
+      {
+        "name": "tmpclaude-9137-cwd",
+        "fileCount": 1
+      },
+      {
+        "name": "tmpclaude-9ce2-cwd",
+        "fileCount": 1
+      },
+      {
+        "name": "tmpclaude-a042-cwd",
+        "fileCount": 1
+      },
+      {
+        "name": "tmpclaude-ab0d-cwd",
+        "fileCount": 1
+      },
+      {
+        "name": "tmpclaude-c202-cwd",
+        "fileCount": 1
+      },
+      {
+        "name": "tmpclaude-c22d-cwd",
+        "fileCount": 1
+      },
+      {
+        "name": "tmpclaude-d711-cwd",
+        "fileCount": 1
+      },
+      {
+        "name": "tmpclaude-de50-cwd",
+        "fileCount": 1
+      },
+      {
+        "name": "tmpclaude-e275-cwd",
+        "fileCount": 1
+      },
+      {
+        "name": "tsconfig.json",
+        "fileCount": 1
+      },
+      {
+        "name": "tsconfig.tsbuildinfo",
+        "fileCount": 1
+      },
+      {
+        "name": "TYPOGRAPHY_UPDATE.md",
+        "fileCount": 1
+      },
+      {
+        "name": "vitest.config.ts",
+        "fileCount": 1
+      }
+    ],
+    "languageDistribution": [
+      {
+        "extension": ".js",
+        "count": 1610
+      },
+      {
+        "extension": ".ts",
+        "count": 1541
+      },
+      {
+        "extension": ".map",
+        "count": 574
+      },
+      {
+        "extension": ".json",
+        "count": 270
+      },
+      {
+        "extension": ".md",
+        "count": 238
+      },
+      {
+        "extension": ".cjs",
+        "count": 149
+      },
+      {
+        "extension": ".cts",
+        "count": 133
+      },
+      {
+        "extension": ".mjs",
+        "count": 60
+      },
+      {
+        "extension": ".mts",
+        "count": 39
+      },
+      {
+        "extension": ".tsx",
+        "count": 31
+      }
+    ]
+  },
+  "architecture": {
+    "layers": [
+      {
+        "name": "Utils",
+        "description": "Shared utilities and helpers",
+        "directories": [
+          "src\\lib",
+          "mcp\\src\\utils"
+        ],
+        "symbolCount": 16,
+        "dependsOn": []
+      },
+      {
+        "name": "Components",
+        "description": "UI components and views",
+        "directories": [
+          "mcp\\src\\tools",
+          "mcp\\src\\providers",
+          "src\\app",
+          "src\\components\\layout",
+          "src\\components\\ui",
+          "src\\app\\typography",
+          "src\\app\\spacing",
+          "src\\app\\styleguide",
+          "src\\app\\patterns",
+          "src\\app\\icons",
+          "src\\app\\home",
+          "src\\app\\colors",
+          "src\\app\\components",
+          "src\\app\\styleguide\\components\\menubar"
+        ],
+        "symbolCount": 32,
+        "dependsOn": []
+      }
+    ],
+    "patterns": [],
+    "entryPoints": [
+      "mcp\\src\\index.ts"
+    ]
+  },
+  "symbols": {
+    "classes": [],
+    "interfaces": [
+      {
+        "name": "BadgeProps",
+        "kind": "interface",
+        "file": "src\\components\\ui\\badge.tsx",
+        "line": 26,
+        "exported": true
+      },
+      {
+        "name": "ButtonProps",
+        "kind": "interface",
+        "file": "src\\components\\ui\\button.tsx",
+        "line": 36,
+        "exported": true
+      },
+      {
+        "name": "ColorsResource",
+        "kind": "interface",
+        "file": "mcp\\src\\providers\\colorsProvider.ts",
+        "line": 5,
+        "exported": true
+      },
+      {
+        "name": "ComponentMeta",
+        "kind": "interface",
+        "file": "mcp\\src\\providers\\componentsProvider.ts",
+        "line": 15,
+        "exported": true
+      },
+      {
+        "name": "ComponentsIndex",
+        "kind": "interface",
+        "file": "mcp\\src\\providers\\componentsProvider.ts",
+        "line": 30,
+        "exported": true
+      },
+      {
+        "name": "IconsResource",
+        "kind": "interface",
+        "file": "mcp\\src\\providers\\iconsProvider.ts",
+        "line": 4,
+        "exported": true
+      },
+      {
+        "name": "NavItem",
+        "kind": "interface",
+        "file": "src\\app\\styleguide\\navigation.ts",
+        "line": 1,
+        "exported": true
+      },
+      {
+        "name": "NavSection",
+        "kind": "interface",
+        "file": "src\\app\\styleguide\\navigation.ts",
+        "line": 6,
+        "exported": true
+      },
+      {
+        "name": "PatternExample",
+        "kind": "interface",
+        "file": "mcp\\src\\providers\\patternsProvider.ts",
+        "line": 4,
+        "exported": true
+      },
+      {
+        "name": "PatternResource",
+        "kind": "interface",
+        "file": "mcp\\src\\providers\\patternsProvider.ts",
+        "line": 11,
+        "exported": true
+      },
+      {
+        "name": "PropsInfo",
+        "kind": "interface",
+        "file": "mcp\\src\\utils\\parse.ts",
+        "line": 56,
+        "exported": true
+      },
+      {
+        "name": "ScaffoldComponentInput",
+        "kind": "interface",
+        "file": "mcp\\src\\tools\\scaffoldComponent.ts",
+        "line": 4,
+        "exported": true
+      },
+      {
+        "name": "ScaffoldComponentOutput",
+        "kind": "interface",
+        "file": "mcp\\src\\tools\\scaffoldComponent.ts",
+        "line": 11,
+        "exported": true
+      },
+      {
+        "name": "SearchComponentsInput",
+        "kind": "interface",
+        "file": "mcp\\src\\tools\\searchComponents.ts",
+        "line": 3,
+        "exported": true
+      },
+      {
+        "name": "SemanticColorsResource",
+        "kind": "interface",
+        "file": "mcp\\src\\providers\\semanticColorsProvider.ts",
+        "line": 3,
+        "exported": true
+      },
+      {
+        "name": "SpacingResource",
+        "kind": "interface",
+        "file": "mcp\\src\\providers\\spacingProvider.ts",
+        "line": 4,
+        "exported": true
+      },
+      {
+        "name": "TailwindColorTokens",
+        "kind": "interface",
+        "file": "mcp\\src\\utils\\parse.ts",
+        "line": 151,
+        "exported": true
+      },
+      {
+        "name": "TypographyResource",
+        "kind": "interface",
+        "file": "mcp\\src\\providers\\typographyProvider.ts",
+        "line": 4,
+        "exported": true
+      },
+      {
+        "name": "ValidateUsageInput",
+        "kind": "interface",
+        "file": "mcp\\src\\tools\\validateUsage.ts",
+        "line": 1,
+        "exported": true
+      },
+      {
+        "name": "ValidateUsageIssue",
+        "kind": "interface",
+        "file": "mcp\\src\\tools\\validateUsage.ts",
+        "line": 5,
+        "exported": true
+      },
+      {
+        "name": "ValidateUsageOutput",
+        "kind": "interface",
+        "file": "mcp\\src\\tools\\validateUsage.ts",
+        "line": 11,
+        "exported": true
+      },
+      {
+        "name": "PageHeaderProps",
+        "kind": "interface",
+        "file": "src\\components\\layout\\page-header.tsx",
+        "line": 4,
+        "exported": false
+      }
+    ],
+    "functions": [
+      {
+        "name": "buildComponentsIndex",
+        "kind": "function",
+        "file": "mcp\\src\\providers\\componentsProvider.ts",
+        "line": 90,
+        "exported": true
+      },
+      {
+        "name": "cn",
+        "kind": "function",
+        "file": "src\\lib\\utils.ts",
+        "line": 4,
+        "exported": true
+      },
+      {
+        "name": "ComponentsPage",
+        "kind": "function",
+        "file": "src\\app\\components\\page.tsx",
+        "line": 3,
+        "exported": true
+      },
+      {
+        "name": "extractCssVariables",
+        "kind": "function",
+        "file": "mcp\\src\\utils\\parse.ts",
+        "line": 194,
+        "exported": true
+      },
+      {
+        "name": "extractExports",
+        "kind": "function",
+        "file": "mcp\\src\\utils\\parse.ts",
+        "line": 30,
+        "exported": true
+      },
+      {
+        "name": "extractImports",
+        "kind": "function",
+        "file": "mcp\\src\\utils\\parse.ts",
+        "line": 18,
+        "exported": true
+      },
+      {
+        "name": "extractPropsInfo",
+        "kind": "function",
+        "file": "mcp\\src\\utils\\parse.ts",
+        "line": 61,
+        "exported": true
+      },
+      {
+        "name": "extractSummary",
+        "kind": "function",
+        "file": "mcp\\src\\utils\\parse.ts",
+        "line": 100,
+        "exported": true
+      },
+      {
+        "name": "extractTailwindColorTokens",
+        "kind": "function",
+        "file": "mcp\\src\\utils\\parse.ts",
+        "line": 156,
+        "exported": true
+      },
+      {
+        "name": "fileExists",
+        "kind": "function",
+        "file": "mcp\\src\\utils\\fs.ts",
+        "line": 4,
+        "exported": true
+      },
+      {
+        "name": "findRepoRoot",
+        "kind": "function",
+        "file": "mcp\\src\\utils\\fs.ts",
+        "line": 31,
+        "exported": true
+      },
+      {
+        "name": "getCardsPattern",
+        "kind": "function",
+        "file": "mcp\\src\\providers\\patternsProvider.ts",
+        "line": 65,
+        "exported": true
+      },
+      {
+        "name": "getColorsResource",
+        "kind": "function",
+        "file": "mcp\\src\\providers\\colorsProvider.ts",
+        "line": 17,
+        "exported": true
+      },
+      {
+        "name": "getComponentByName",
+        "kind": "function",
+        "file": "mcp\\src\\providers\\componentsProvider.ts",
+        "line": 122,
+        "exported": true
+      },
+      {
+        "name": "getIconsResource",
+        "kind": "function",
+        "file": "mcp\\src\\providers\\iconsProvider.ts",
+        "line": 24,
+        "exported": true
+      },
+      {
+        "name": "getLayoutPattern",
+        "kind": "function",
+        "file": "mcp\\src\\providers\\patternsProvider.ts",
+        "line": 29,
+        "exported": true
+      },
+      {
+        "name": "getSemanticColorsResource",
+        "kind": "function",
+        "file": "mcp\\src\\providers\\semanticColorsProvider.ts",
+        "line": 29,
+        "exported": true
+      },
+      {
+        "name": "getSpacingResource",
+        "kind": "function",
+        "file": "mcp\\src\\providers\\spacingProvider.ts",
+        "line": 20,
+        "exported": true
+      },
+      {
+        "name": "getTypographyResource",
+        "kind": "function",
+        "file": "mcp\\src\\providers\\typographyProvider.ts",
+        "line": 52,
+        "exported": true
+      },
+      {
+        "name": "Home",
+        "kind": "function",
+        "file": "src\\app\\page.tsx",
+        "line": 3,
+        "exported": true
+      },
+      {
+        "name": "HomePage",
+        "kind": "function",
+        "file": "src\\app\\home\\page.tsx",
+        "line": 28,
+        "exported": true
+      },
+      {
+        "name": "inferTags",
+        "kind": "function",
+        "file": "mcp\\src\\utils\\parse.ts",
+        "line": 115,
+        "exported": true
+      },
+      {
+        "name": "listFilesWithExtension",
+        "kind": "function",
+        "file": "mcp\\src\\utils\\fs.ts",
+        "line": 17,
+        "exported": true
+      },
+      {
+        "name": "MenubarPage",
+        "kind": "function",
+        "file": "src\\app\\styleguide\\components\\menubar\\page.tsx",
+        "line": 20,
+        "exported": true
+      },
+      {
+        "name": "PageHeader",
+        "kind": "function",
+        "file": "src\\components\\layout\\page-header.tsx",
+        "line": 9,
+        "exported": true
+      },
+      {
+        "name": "PatternsPage",
+        "kind": "function",
+        "file": "src\\app\\patterns\\page.tsx",
+        "line": 3,
+        "exported": true
+      },
+      {
+        "name": "readFileText",
+        "kind": "function",
+        "file": "mcp\\src\\utils\\fs.ts",
+        "line": 13,
+        "exported": true
+      },
+      {
+        "name": "RootLayout",
+        "kind": "function",
+        "file": "src\\app\\layout.tsx",
+        "line": 16,
+        "exported": true
+      },
+      {
+        "name": "scaffoldComponent",
+        "kind": "function",
+        "file": "mcp\\src\\tools\\scaffoldComponent.ts",
+        "line": 117,
+        "exported": true
+      },
+      {
+        "name": "searchComponents",
+        "kind": "function",
+        "file": "mcp\\src\\tools\\searchComponents.ts",
+        "line": 9,
+        "exported": true
+      },
+      {
+        "name": "SpacingPage",
+        "kind": "function",
+        "file": "src\\app\\spacing\\page.tsx",
+        "line": 3,
+        "exported": true
+      },
+      {
+        "name": "toKebabCase",
+        "kind": "function",
+        "file": "mcp\\src\\utils\\parse.ts",
+        "line": 11,
+        "exported": true
+      },
+      {
+        "name": "toPascalCase",
+        "kind": "function",
+        "file": "mcp\\src\\utils\\parse.ts",
+        "line": 1,
+        "exported": true
+      },
+      {
+        "name": "TypographyPage",
+        "kind": "function",
+        "file": "src\\app\\typography\\page.tsx",
+        "line": 3,
+        "exported": true
+      },
+      {
+        "name": "useIsMobile",
+        "kind": "function",
+        "file": "src\\hooks\\use-mobile.tsx",
+        "line": 5,
+        "exported": true
+      },
+      {
+        "name": "validateUsage",
+        "kind": "function",
+        "file": "mcp\\src\\tools\\validateUsage.ts",
+        "line": 80,
+        "exported": true
+      },
+      {
+        "name": "Badge",
+        "kind": "function",
+        "file": "src\\components\\ui\\badge.tsx",
+        "line": 30,
+        "exported": false
+      },
+      {
+        "name": "buildButtonTemplate",
+        "kind": "function",
+        "file": "mcp\\src\\tools\\scaffoldComponent.ts",
+        "line": 35,
+        "exported": false
+      },
+      {
+        "name": "buildCardTemplate",
+        "kind": "function",
+        "file": "mcp\\src\\tools\\scaffoldComponent.ts",
+        "line": 87,
+        "exported": false
+      },
+      {
+        "name": "buildLayoutTemplate",
+        "kind": "function",
+        "file": "mcp\\src\\tools\\scaffoldComponent.ts",
+        "line": 102,
+        "exported": false
+      },
+      {
+        "name": "buildPrimitiveTemplate",
+        "kind": "function",
+        "file": "mcp\\src\\tools\\scaffoldComponent.ts",
+        "line": 15,
+        "exported": false
+      },
+      {
+        "name": "buildUsageExamples",
+        "kind": "function",
+        "file": "mcp\\src\\providers\\componentsProvider.ts",
+        "line": 36,
+        "exported": false
+      },
+      {
+        "name": "extractIconsFromPage",
+        "kind": "function",
+        "file": "mcp\\src\\providers\\iconsProvider.ts",
+        "line": 12,
+        "exported": false
+      },
+      {
+        "name": "extractSnippet",
+        "kind": "function",
+        "file": "mcp\\src\\providers\\patternsProvider.ts",
+        "line": 20,
+        "exported": false
+      },
+      {
+        "name": "extractSpacingScale",
+        "kind": "function",
+        "file": "mcp\\src\\providers\\spacingProvider.ts",
+        "line": 11,
+        "exported": false
+      },
+      {
+        "name": "findColorIssues",
+        "kind": "function",
+        "file": "mcp\\src\\tools\\validateUsage.ts",
+        "line": 35,
+        "exported": false
+      },
+      {
+        "name": "findComponentIssues",
+        "kind": "function",
+        "file": "mcp\\src\\tools\\validateUsage.ts",
+        "line": 50,
+        "exported": false
+      },
+      {
+        "name": "findIconIssues",
+        "kind": "function",
+        "file": "mcp\\src\\tools\\validateUsage.ts",
+        "line": 63,
+        "exported": false
+      },
+      {
+        "name": "findSpacingIssues",
+        "kind": "function",
+        "file": "mcp\\src\\tools\\validateUsage.ts",
+        "line": 18,
+        "exported": false
+      },
+      {
+        "name": "main",
+        "kind": "function",
+        "file": "mcp\\src\\index.ts",
+        "line": 26,
+        "exported": false
+      }
+    ],
+    "types": [
+      {
+        "name": "ComponentCategory",
+        "kind": "type",
+        "file": "mcp\\src\\providers\\componentsProvider.ts",
+        "line": 13,
+        "exported": true
+      },
+      {
+        "name": "SidebarContextProps",
+        "kind": "type",
+        "file": "src\\components\\ui\\sidebar.tsx",
+        "line": 35,
+        "exported": false
+      }
+    ],
+    "enums": []
+  },
+  "publicAPI": [
+    {
+      "name": "BadgeProps",
+      "kind": "interface",
+      "file": "src\\components\\ui\\badge.tsx",
+      "line": 26,
+      "exported": true
+    },
+    {
+      "name": "buildComponentsIndex",
+      "kind": "function",
+      "file": "mcp\\src\\providers\\componentsProvider.ts",
+      "line": 90,
+      "exported": true
+    },
+    {
+      "name": "ButtonProps",
+      "kind": "interface",
+      "file": "src\\components\\ui\\button.tsx",
+      "line": 36,
+      "exported": true
+    },
+    {
+      "name": "cn",
+      "kind": "function",
+      "file": "src\\lib\\utils.ts",
+      "line": 4,
+      "exported": true
+    },
+    {
+      "name": "ColorsResource",
+      "kind": "interface",
+      "file": "mcp\\src\\providers\\colorsProvider.ts",
+      "line": 5,
+      "exported": true
+    },
+    {
+      "name": "ComponentCategory",
+      "kind": "type",
+      "file": "mcp\\src\\providers\\componentsProvider.ts",
+      "line": 13,
+      "exported": true
+    },
+    {
+      "name": "ComponentMeta",
+      "kind": "interface",
+      "file": "mcp\\src\\providers\\componentsProvider.ts",
+      "line": 15,
+      "exported": true
+    },
+    {
+      "name": "ComponentsIndex",
+      "kind": "interface",
+      "file": "mcp\\src\\providers\\componentsProvider.ts",
+      "line": 30,
+      "exported": true
+    },
+    {
+      "name": "ComponentsPage",
+      "kind": "function",
+      "file": "src\\app\\components\\page.tsx",
+      "line": 3,
+      "exported": true
+    },
+    {
+      "name": "extractCssVariables",
+      "kind": "function",
+      "file": "mcp\\src\\utils\\parse.ts",
+      "line": 194,
+      "exported": true
+    },
+    {
+      "name": "extractExports",
+      "kind": "function",
+      "file": "mcp\\src\\utils\\parse.ts",
+      "line": 30,
+      "exported": true
+    },
+    {
+      "name": "extractImports",
+      "kind": "function",
+      "file": "mcp\\src\\utils\\parse.ts",
+      "line": 18,
+      "exported": true
+    },
+    {
+      "name": "extractPropsInfo",
+      "kind": "function",
+      "file": "mcp\\src\\utils\\parse.ts",
+      "line": 61,
+      "exported": true
+    },
+    {
+      "name": "extractSummary",
+      "kind": "function",
+      "file": "mcp\\src\\utils\\parse.ts",
+      "line": 100,
+      "exported": true
+    },
+    {
+      "name": "extractTailwindColorTokens",
+      "kind": "function",
+      "file": "mcp\\src\\utils\\parse.ts",
+      "line": 156,
+      "exported": true
+    },
+    {
+      "name": "fileExists",
+      "kind": "function",
+      "file": "mcp\\src\\utils\\fs.ts",
+      "line": 4,
+      "exported": true
+    },
+    {
+      "name": "findRepoRoot",
+      "kind": "function",
+      "file": "mcp\\src\\utils\\fs.ts",
+      "line": 31,
+      "exported": true
+    },
+    {
+      "name": "getCardsPattern",
+      "kind": "function",
+      "file": "mcp\\src\\providers\\patternsProvider.ts",
+      "line": 65,
+      "exported": true
+    },
+    {
+      "name": "getColorsResource",
+      "kind": "function",
+      "file": "mcp\\src\\providers\\colorsProvider.ts",
+      "line": 17,
+      "exported": true
+    },
+    {
+      "name": "getComponentByName",
+      "kind": "function",
+      "file": "mcp\\src\\providers\\componentsProvider.ts",
+      "line": 122,
+      "exported": true
+    },
+    {
+      "name": "getIconsResource",
+      "kind": "function",
+      "file": "mcp\\src\\providers\\iconsProvider.ts",
+      "line": 24,
+      "exported": true
+    },
+    {
+      "name": "getLayoutPattern",
+      "kind": "function",
+      "file": "mcp\\src\\providers\\patternsProvider.ts",
+      "line": 29,
+      "exported": true
+    },
+    {
+      "name": "getSemanticColorsResource",
+      "kind": "function",
+      "file": "mcp\\src\\providers\\semanticColorsProvider.ts",
+      "line": 29,
+      "exported": true
+    },
+    {
+      "name": "getSpacingResource",
+      "kind": "function",
+      "file": "mcp\\src\\providers\\spacingProvider.ts",
+      "line": 20,
+      "exported": true
+    },
+    {
+      "name": "getTypographyResource",
+      "kind": "function",
+      "file": "mcp\\src\\providers\\typographyProvider.ts",
+      "line": 52,
+      "exported": true
+    },
+    {
+      "name": "Home",
+      "kind": "function",
+      "file": "src\\app\\page.tsx",
+      "line": 3,
+      "exported": true
+    },
+    {
+      "name": "HomePage",
+      "kind": "function",
+      "file": "src\\app\\home\\page.tsx",
+      "line": 28,
+      "exported": true
+    },
+    {
+      "name": "IconsResource",
+      "kind": "interface",
+      "file": "mcp\\src\\providers\\iconsProvider.ts",
+      "line": 4,
+      "exported": true
+    },
+    {
+      "name": "inferTags",
+      "kind": "function",
+      "file": "mcp\\src\\utils\\parse.ts",
+      "line": 115,
+      "exported": true
+    },
+    {
+      "name": "listFilesWithExtension",
+      "kind": "function",
+      "file": "mcp\\src\\utils\\fs.ts",
+      "line": 17,
+      "exported": true
+    },
+    {
+      "name": "MenubarPage",
+      "kind": "function",
+      "file": "src\\app\\styleguide\\components\\menubar\\page.tsx",
+      "line": 20,
+      "exported": true
+    },
+    {
+      "name": "NavItem",
+      "kind": "interface",
+      "file": "src\\app\\styleguide\\navigation.ts",
+      "line": 1,
+      "exported": true
+    },
+    {
+      "name": "NavSection",
+      "kind": "interface",
+      "file": "src\\app\\styleguide\\navigation.ts",
+      "line": 6,
+      "exported": true
+    },
+    {
+      "name": "PageHeader",
+      "kind": "function",
+      "file": "src\\components\\layout\\page-header.tsx",
+      "line": 9,
+      "exported": true
+    },
+    {
+      "name": "PatternExample",
+      "kind": "interface",
+      "file": "mcp\\src\\providers\\patternsProvider.ts",
+      "line": 4,
+      "exported": true
+    },
+    {
+      "name": "PatternResource",
+      "kind": "interface",
+      "file": "mcp\\src\\providers\\patternsProvider.ts",
+      "line": 11,
+      "exported": true
+    },
+    {
+      "name": "PatternsPage",
+      "kind": "function",
+      "file": "src\\app\\patterns\\page.tsx",
+      "line": 3,
+      "exported": true
+    },
+    {
+      "name": "PropsInfo",
+      "kind": "interface",
+      "file": "mcp\\src\\utils\\parse.ts",
+      "line": 56,
+      "exported": true
+    },
+    {
+      "name": "readFileText",
+      "kind": "function",
+      "file": "mcp\\src\\utils\\fs.ts",
+      "line": 13,
+      "exported": true
+    },
+    {
+      "name": "RootLayout",
+      "kind": "function",
+      "file": "src\\app\\layout.tsx",
+      "line": 16,
+      "exported": true
+    },
+    {
+      "name": "scaffoldComponent",
+      "kind": "function",
+      "file": "mcp\\src\\tools\\scaffoldComponent.ts",
+      "line": 117,
+      "exported": true
+    },
+    {
+      "name": "ScaffoldComponentInput",
+      "kind": "interface",
+      "file": "mcp\\src\\tools\\scaffoldComponent.ts",
+      "line": 4,
+      "exported": true
+    },
+    {
+      "name": "ScaffoldComponentOutput",
+      "kind": "interface",
+      "file": "mcp\\src\\tools\\scaffoldComponent.ts",
+      "line": 11,
+      "exported": true
+    },
+    {
+      "name": "searchComponents",
+      "kind": "function",
+      "file": "mcp\\src\\tools\\searchComponents.ts",
+      "line": 9,
+      "exported": true
+    },
+    {
+      "name": "SearchComponentsInput",
+      "kind": "interface",
+      "file": "mcp\\src\\tools\\searchComponents.ts",
+      "line": 3,
+      "exported": true
+    },
+    {
+      "name": "SemanticColorsResource",
+      "kind": "interface",
+      "file": "mcp\\src\\providers\\semanticColorsProvider.ts",
+      "line": 3,
+      "exported": true
+    },
+    {
+      "name": "SpacingPage",
+      "kind": "function",
+      "file": "src\\app\\spacing\\page.tsx",
+      "line": 3,
+      "exported": true
+    },
+    {
+      "name": "SpacingResource",
+      "kind": "interface",
+      "file": "mcp\\src\\providers\\spacingProvider.ts",
+      "line": 4,
+      "exported": true
+    },
+    {
+      "name": "TailwindColorTokens",
+      "kind": "interface",
+      "file": "mcp\\src\\utils\\parse.ts",
+      "line": 151,
+      "exported": true
+    },
+    {
+      "name": "toKebabCase",
+      "kind": "function",
+      "file": "mcp\\src\\utils\\parse.ts",
+      "line": 11,
+      "exported": true
+    }
+  ],
+  "dependencies": {
+    "mostImported": [
+      {
+        "file": "C:\\Projetos\\design_system\\mcp\\src\\providers\\componentsProvider.ts",
+        "importedBy": 2
+      },
+      {
+        "file": "C:\\Projetos\\design_system\\src\\lib\\utils.ts",
+        "importedBy": 1
+      },
+      {
+        "file": "C:\\Projetos\\design_system\\mcp\\src\\utils\\parse.ts",
+        "importedBy": 1
+      },
+      {
+        "file": "C:\\Projetos\\design_system\\mcp\\src\\utils\\fs.ts",
+        "importedBy": 1
+      },
+      {
+        "file": "C:\\Projetos\\design_system\\mcp\\src\\tools\\searchComponents.ts",
+        "importedBy": 1
+      },
+      {
+        "file": "C:\\Projetos\\design_system\\mcp\\src\\tools\\scaffoldComponent.ts",
+        "importedBy": 1
+      },
+      {
+        "file": "C:\\Projetos\\design_system\\mcp\\src\\providers\\typographyProvider.ts",
+        "importedBy": 1
+      },
+      {
+        "file": "C:\\Projetos\\design_system\\mcp\\src\\providers\\colorsProvider.ts",
+        "importedBy": 1
+      },
+      {
+        "file": "C:\\Projetos\\design_system\\src\\app\\globals.css",
+        "importedBy": 1
+      },
+      {
+        "file": "C:\\Projetos\\design_system\\src\\components\\ui\\card.tsx",
+        "importedBy": 1
+      },
+      {
+        "file": "C:\\Projetos\\design_system\\src\\components\\ui\\button.tsx",
+        "importedBy": 1
+      },
+      {
+        "file": "C:\\Projetos\\design_system\\src\\app\\styleguide\\navigation.ts",
+        "importedBy": 1
+      }
+    ]
+  },
+  "stats": {
+    "totalSymbols": 80,
+    "exportedSymbols": 58,
+    "analysisTimeMs": 757
+  }
+}
